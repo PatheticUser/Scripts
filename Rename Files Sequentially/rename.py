@@ -1,6 +1,7 @@
 import os
 
-def rename_files(directory, start, end):
+def rename_files(start, end):
+    directory = os.getcwd()  # Get the current directory where the script is running
     files = sorted(os.listdir(directory))  # Sort files to rename in order
     num_files = min(len(files), end - start + 1)  # Ensure we don't exceed available files
     
@@ -12,9 +13,8 @@ def rename_files(directory, start, end):
         os.rename(old_path, new_path)
         print(f"Renamed: {filename} → {new_name}")
 
-# Example usage
-directory_path = "/storage/emulated/0/Shows/Regular Show" #Change this to your directory
-start_num = 14  # Change to your desired starting number
-end_num = 37  # Change to your desired ending number
+# Get user input for start and end numbers
+start_num = int(input("Enter the starting number: "))
+end_num = int(input("Enter the ending number: "))
 
-rename_files(directory_path, start_num, end_num)
+rename_files(start_num, end_num)

@@ -9,10 +9,8 @@ libraries = [
     "pandas",
     "matplotlib",
     "seaborn",
-    "scipy",
     "scikit-learn",
     "tensorflow",
-    "opencv-python",
     "jupyter"
 ]
 

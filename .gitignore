@@ -1,0 +1,35 @@
+# --- Python & Environment ---
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# --- uv Package Manager ---
+# Keep pyproject.toml and uv.lock tracked, but ignore uv cache if present
+.uv_cache/
+
+# --- Local Project Workspace & Backups ---
+# Ignoring the specific cloning/utility directories you listed
+'Clone Repositories'/
+'the-schoolofai_repos'/
+'Commit Hack'/
+'Delete Lyrics Files'/
+'Install ML Libs'/
+'List Everything'/
+'Merge Jupyter Notebooks'/
+'Rename Files Sequentially'/
+'Rename Songs'/
+
+# --- System & IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Logs & Temp ---
+*.log
+tmp/
+temp/
